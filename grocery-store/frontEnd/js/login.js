@@ -11,11 +11,15 @@ function getLoginCredentials(){
         $("#loginPassword").val('');
         var url = "http://localhost:5555/login/";
         var data = {"username": username, "password": password};
+        
         // POST AJAX Request
         $.post({url: url, data: data, success: function(data){
             if(data.result == true){
                 // localStorage.setItem('credentialCheck', 'true');
-                location.href="home.html";
+               
+                alert('Login Successful')
+            
+                 location.href="home.html";
             }else{
                 // localStorage.setItem('credentialCheck', 'false');
                 alert("Login Failed!!!!!");

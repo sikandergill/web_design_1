@@ -6,9 +6,10 @@ var { v4: uuidv4 } = require('uuid');
 
 var app = express(); // Express is sleeping and we want awake it. So, we are calling it.
 var users = require('./json/users.json');
+// var users = [];
 
 // for parsing application/xwww-
-app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(bodyParser.urlencoded({ extended: false })); 
 //form-urlencoded
 
 
@@ -16,9 +17,12 @@ var port = 5555;  // We are assigning address to the server.
 
 app.use(cors());
 app.use(express.static('images'));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser());
- 
+app.use(bodyParser.json()); 
+// app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('/', (req, res) => {
+  res.send('Hello!')
+})
 
 app.post('/login', (req, res) => {
     var username = req.body.username;

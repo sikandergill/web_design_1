@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 function registerUser(){
     $("#register").click(function(event){
+        event.preventDefault();
         var username = $("#registerInput").val();
         var password = $("#registerPassword").val();
         $("#registerInput").val('');
@@ -16,7 +17,6 @@ function registerUser(){
             // POST AJAX request
             $.post({url: url, data: data, success: function(data){
                 if(data.result == true){
-                    console.log(data);
                     alert("Registration Success!!!!!");
                     location.href="login.html";
                 }else{

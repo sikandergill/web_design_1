@@ -5,67 +5,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/register.js"></script>
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-
-    <!-- REGISTRATION FORM -->
-    <div class="text-center" style="padding:50px 0">
-      <div class="logo">register</div>
-      <!-- Main Form -->
-      <div class="login-form-1">
-        <form id="register-form" class="text-left">
-          <div class="login-form-main-message"></div>
-          <div class="main-login-form">
-            <div class="login-group">
-              <main class="form-signin">
-                <form method="POST" action="/register">
-                  <!-- <img class="mb-4" src="imgs/logo.jpeg" alt="" width="80" height="75"> -->
-                  <h1 class="h3 mb-3 fw-normal">Please register</h1>
-              
-                  <div class="form-floating" style="margin-bottom: 1rem;">
-
-                    <label for="lg_username" for="registerInput" class="sr-only">Username</label>
-                    <input class="form-control" id="lg_username registerInput" name="lg_username" type="text" class="form-control" placeholder="Username">
-                  </div>
-                  <div class="form-floating" style="margin-bottom: 1rem;">
-                    <!-- <input type="password" class="form-control" id="registerPassword" placeholder="Password">
-                    <label for="registerPassword">Password</label> -->
-
-                                <label for="registerPassword" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="lg_password registerPassword" name="lg_password"  placeholder="Password">
-                  </div>
-                  <button class="w-100 btn btn-lg btn-primary" type="button" id="register">Register</button>
-            
-
-            
-              
+  <body>
     
-              <div class="form-group login-group-checkbox">
-                <input type="checkbox" class="" id="reg_agree" name="reg_agree">
-                <label for="reg_agree">i agree with <a href="#">terms</a></label>
-              </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Register</h5>
+          <form class="login-form-1">
+            <div class="form-floating" style="margin-bottom: 1rem;">
+              <input type="text" class="form-control" id="registerInput" placeholder="Username">
+              <!-- <label for="registerInput">Username</label> -->
             </div>
-            <!-- <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button> -->
-          </div>
-          <div class="etc-login-form">
-            <p>already have an account? <a href="login.html">login here</a></p>
-          </div>
-        </form>
-          </main>
-      </div>
-      <!-- end:Main Form -->
-    </div>
 
-  
+            <div class="form-floating" style="margin-bottom: 1rem;">
+              <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+              <!-- <label for="registerPassword">Password</label> -->
+            </div>
+
+           
+            <button class="w-100 btn btn-lg btn-primary" type="button" id="register">Register</button>
+            <a href="login.html">Login here</a>
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- <div>
+      <div class="form-floating" style="margin-bottom: 1rem;">
+        <input type="text" class="form-control" id="registerInput" placeholder="Username">
+        <label for="registerInput">Username</label>
+      </div>
+      <div class="form-floating" style="margin-bottom: 1rem;">
+        <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+        <label for="registerPassword">Password</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="button" id="register">Register</button>
+    </div> -->
   </body>
 </html>

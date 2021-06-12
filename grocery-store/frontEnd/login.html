@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+
+    <!-- LOGIN FORM -->
+    <div class="text-center" style="padding:50px 0">
+      <div class="logo">login</div>
+      <!-- Main Form -->
+      <div class="login-form-1">
+        <form id="login-form" class="text-left">
+          <div class="login-form-main-message"></div>
+          <div class="main-login-form">
+            <div class="login-group">
+              <div class="form-floating" style="margin-bottom: 1rem;">
+                <input type="text" class="form-control" id="loginInput" placeholder="Username">
+                <label for="loginInput" class="sr-only">Username</label>
+              </div>
+              
+              <div class="form-floating" style="margin-bottom: 1rem;">
+                <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                <label for="loginPassword" class="sr-only"  >Password</label>
+              </div>
+              <!-- <div class="form-group">
+                <label for="lg_username" class="sr-only">Username</label>
+                <input type="text" class="form-control" id="lg_username loginInput" name="lg_username" placeholder="username">
+              </div> -->
+              <!-- <div class="form-floating" style="margin-bottom: 1rem;">
+                <input type="text" class="form-control" id="loginInput" placeholder="Username">
+                <label for="floatingInput">Email address</label>
+              </div> -->
+              <!-- <div class="form-floating" style="margin-bottom: 1rem;">
+                <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label> 
+              </div> -->
+              <!-- <div class="form-group">
+                <label for="lg_password" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+              </div> -->
+              <div class="form-group login-group-checkbox">
+                <input type="checkbox" id="lg_remember" name="lg_remember">
+                <label for="lg_remember">remember</label>
+              </div>
+            </div>
+            <!-- <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button> -->
+            <button class="w-100 btn btn-lg btn-primary" id="login" type="button">Login in</button>
+          </div>
+          <div class="etc-login-form">
+            <p>forgot your password? <a href="#">click here</a></p>
+            <p>new user? <a href="#">create new account</a></p>
+          </div>
+        </form>
+      </div>
+      <!-- end:Main Form -->
+    </div>
+    <!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Quiz-App</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+            <a class="nav-link" href="register.html">Register</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="form-signin">
+        <form>
+          <img class="mb-4" src="imgs/logo.jpeg" alt="" width="80" height="75">
+          <h1 class="h3 mb-3 fw-normal">Please login in</h1>
+      
+          <div class="form-floating" style="margin-bottom: 1rem;">
+            <input type="text" class="form-control" id="loginInput" placeholder="Username">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating" style="margin-bottom: 1rem;">
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" id="login" type="button">Login in</button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+      </footer>
+    </div> -->
+  </body>
+</html>

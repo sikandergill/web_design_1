@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .fixed-width {
+            max-width: 960px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Sikander Singh</h1>
+        <p>This web page is made by using Bootstrap which is the most popular HTML, CSS framework</p>
+    </div>
+    <div class="container fixed-width p-5 justify-content-center align-items-center bg-dark text-light">
+        <div class="row justify-content-center align-items-center">
+            <h1>This is a 960px container</h1>
+        </div>
+    </div>
+    <div class="contanier mt-4">
+        <div class="row m-0">
+            <div class="col-md-8 col-sm-12 bg-primary p-2">
+                <h1>Final Exam</h1>
+                <p class="text-danger">This text is styled using contextual colors in Bootstrap.</p>
+                <span class="badge badge-secondary p-3">Now</span>
+            </div>
+            <div class="col-md-4 col-sm-12 bg-info p-4">
+                <img src="code.jpeg" class="rounded-circle" alt="Code" width="250px" height="250px">
+            </div>
+        </div>
+    </div>
+    <div class="container m-5">
+        <h2>Tab Navigation</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container m-5">
+        <h2>Bootstrap form</h2>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="email">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Option 1
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Option 2
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

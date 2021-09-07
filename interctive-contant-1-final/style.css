@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+}
+
+.header {
+  background: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+.background {
+  background: url("./images/backround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.links {
+  width: 100%;
+  background: #3db36b;
+}
+
+.links ul {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.links ul li {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+.nav {
+  background: #fff;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-center {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.nav h3 {
+  padding: 40px 20px;
+  display: inline;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation ul{
+    height: 100%;
+}
+.nav nav ul li {
+  display: inline-block;
+  padding: 45px 20px;
+  color: #000;
+  /* height: 100%; */
+  /* border-bottom: 2px solid #3db36b; */
+}
+.nav nav ul li:hover{
+    border-bottom: 2px solid #3db36b;
+    color: #3db36b;
+    cursor: pointer;
+}
+.modal {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  /* background: #000; */
+}
+
+.modal-center {
+  width: 60%;
+  background-color: #fff;
+  padding: 35px 15px;
+  /* opacity: .5 */
+}
+
+.modal-center h1 {
+  font-size: 70px;
+  padding: 20px;
+}
+
+.modal-center p {
+  font-size: 20px;
+  padding: 10px;
+  color: #818181;
+  /* font-weight: ; */
+}
+.nav-btn {
+  margin: 22px 0 30px 0;
+  color: #3db36b;
+  background: #fff;
+  padding: 18px 30px;
+  border: none;
+  border: 1px solid #3db36b;
+}
+.nav-btn:hover {
+  color: #fff;
+  background: #3db36b;
+  cursor: pointer;
+}
+.modal-btn {
+  color: #fff;
+  background: #3db36b;
+  padding: 18px 30px;
+  border: none;
+}
+
+.modal-btn:hover {
+  color: #fff;
+  background: #267d48;
+  cursor: pointer;
+}
+
+.pages {
+  width: 100%;
+  background: #f6f6f6;
+}
+
+.pages-center {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.pages-center h5 {
+  padding: 30px 0 0 0;
+  color: #a2a2a2;
+}
+
+.pages h1 {
+  padding: 0 0 40px 0;
+  font-size: 40px;
+}
+
+.img-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+
+.img-container .img {
+  text-align: left;
+}
+
+.img-container .img h2 {
+  padding: 20px 0 10px 0;
+}
+
+.img-container .img img {
+  width: 100%;
+}
+
+.white-space {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.white-space a {
+  color: #3db36b;
+  padding: 10px;
+}
+
+.white-space h3 {
+  color: #a2a2a2;
+}
+
+.booking {
+  width: 100%;
+  background: #3db36b;
+  padding: 30px 0 0 0;
+  color: #fff;
+  position: relative;
+}
+
+.book-center {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.left {
+  width: 60%;
+}
+
+.left h1 {
+  font-size: 50px;
+}
+
+.left ul {
+  padding: 20px;
+}
+
+.left ul li {
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+}
+
+.left button {
+  padding: 20px 40px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.laptop img {
+  width: 100%;
+}
+
+.banner{
+    background: url("./images/bg.jpg");
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner h1{
+    font-size: 50px;
+}
+
+.banner h3{
+    font-size: 15px;
+}
+
+/* .bg {
+  background: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* /* background-position: fixed;
+  background-attachment: fixed; 
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+
+.header, .modal, .pages, .booking, .banner{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer div{
+    display: flex;
+}
+
+.footer div h4{
+    padding: 10px;
+}
